@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Food Planning App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="continue_with_google_str">Continue With Google</string>
+    <string name="continue_with_mail_str">continue With Mail</string>
+    <string name="Title_start" />
+    <string name="Title_string"></string>
+    <string name="continue_as_guest">Continue as Guest</string>
+    <string name="continue_with_mail">Continue With Mail</string>
 </resources>
