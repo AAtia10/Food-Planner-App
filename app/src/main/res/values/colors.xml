@@ -4,4 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="ff6f22">#FF6F22</color>
     <color name="start_page_back">#ff6f22</color>
+    <color name="blue">#00BCD4</color>
+    <color name="orange">#E65425</color>
+    <color name="black_alpha">#80000000</color>
 </resources>

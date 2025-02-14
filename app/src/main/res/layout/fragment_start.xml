@@ -6,13 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/start_page_back"
-    tools:context=".StartFragment">
+    tools:context=".ui.start.StartFragment">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="cursive"
+        android:layout_marginTop="30dp"
         android:rotation="0"
         android:rotationY="0"
         android:text="@string/Title_string"
@@ -26,7 +27,7 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/googlebtn"
+        android:id="@+id/mailbtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
@@ -38,11 +39,11 @@
         android:textStyle="bold"
         app:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/mailebtn"
+        app:layout_constraintBottom_toTopOf="@+id/gbtn"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/mailebtn"
+        android:id="@+id/gbtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="7dp"
@@ -56,8 +57,8 @@
         android:textStyle="bold"
         app:backgroundTint="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/guestbtn"
-        app:layout_constraintEnd_toEndOf="@id/googlebtn"
-        app:layout_constraintStart_toStartOf="@id/googlebtn" />
+        app:layout_constraintEnd_toEndOf="@id/mailbtn"
+        app:layout_constraintStart_toStartOf="@id/mailbtn" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/guestbtn"
@@ -70,9 +71,9 @@
         app:backgroundTint="@color/white"
         android:textColor="@color/black"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@id/googlebtn"
+        app:layout_constraintEnd_toEndOf="@id/mailbtn"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@id/googlebtn" />
+        app:layout_constraintStart_toStartOf="@id/mailbtn" />
 
     <ImageView
         android:id="@+id/imageView2"

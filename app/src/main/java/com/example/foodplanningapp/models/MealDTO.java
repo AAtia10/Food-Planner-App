@@ -1,4 +1,7 @@
-package com.example.foodplanningapp;
+package com.example.foodplanningapp.models;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MealDTO {
     private String idMeal;
@@ -477,5 +480,75 @@ public class MealDTO {
 
     public void setDateModified(Object dateModified) {
         this.dateModified = dateModified;
+    }
+
+
+
+    public List<MeasureDTO> getMeasureList()
+    {
+        List<MeasureDTO> list = new ArrayList<>();
+
+        if (strIngredient1 != null && strMeasure1 != null && !strIngredient1.isEmpty() && !strMeasure1.isEmpty()) {
+            list.add(new MeasureDTO(strIngredient1, strMeasure1));
+        }
+        if (strIngredient2 != null && strMeasure2 != null && !strIngredient2.isEmpty() && !strMeasure2.isEmpty()) {
+            list.add(new MeasureDTO(strIngredient2, strMeasure2));
+        }
+        if (strIngredient3 != null && strMeasure3 != null && !strIngredient3.isEmpty() && !strMeasure3.isEmpty()) {
+            list.add(new MeasureDTO(strIngredient3, strMeasure3));
+        }
+        if (strIngredient4 != null && strMeasure4 != null && !strIngredient4.isEmpty() && !strMeasure4.isEmpty()) {
+            list.add(new MeasureDTO(strIngredient4, strMeasure4));
+        }
+        if (strIngredient5 != null && strMeasure5 != null && !strIngredient5.isEmpty() && !strMeasure5.isEmpty()) {
+            list.add(new MeasureDTO(strIngredient5, strMeasure5));
+        }
+        if (strIngredient6 != null && strMeasure6 != null && !strIngredient6.isEmpty() && !strMeasure6.isEmpty()) {
+            list.add(new MeasureDTO(strIngredient6, strMeasure6));
+        }
+        if (strIngredient7 != null && strMeasure7 != null && !strIngredient7.isEmpty() && !strMeasure7.isEmpty()) {
+            list.add(new MeasureDTO(strIngredient7, strMeasure7));
+        }
+        if (strIngredient8 != null && strMeasure8 != null && !strIngredient8.isEmpty() && !strMeasure8.isEmpty()) {
+            list.add(new MeasureDTO(strIngredient8, strMeasure8));
+        }
+        if (strIngredient9 != null && strMeasure9 != null && !strIngredient9.isEmpty() && !strMeasure9.isEmpty()) {
+            list.add(new MeasureDTO(strIngredient9, strMeasure9));
+        }
+        if (strIngredient10 != null && strMeasure10 != null && !strIngredient10.isEmpty() && !strMeasure10.isEmpty()) {
+            list.add(new MeasureDTO(strIngredient10, strMeasure10));
+        }
+        if (strIngredient11 != null && strMeasure11 != null && !strIngredient11.isEmpty() && !strMeasure11.isEmpty()) {
+            list.add(new MeasureDTO(strIngredient11, strMeasure11));
+        }
+        if (strIngredient12 != null && strMeasure12 != null && !strIngredient12.isEmpty() && !strMeasure12.isEmpty()) {
+            list.add(new MeasureDTO(strIngredient12, strMeasure12));
+        }
+        if (strIngredient13 != null && strMeasure13 != null && !strIngredient13.isEmpty() && !strMeasure13.isEmpty()) {
+            list.add(new MeasureDTO(strIngredient13, strMeasure13));
+        }
+        if (strIngredient14 != null && strMeasure14 != null && !strIngredient14.isEmpty() && !strMeasure14.isEmpty()) {
+            list.add(new MeasureDTO(strIngredient14, strMeasure14));
+        }
+        if (strIngredient15 != null && strMeasure15 != null && !strIngredient15.isEmpty() && !strMeasure15.isEmpty()) {
+            list.add(new MeasureDTO(strIngredient15, strMeasure15));
+        }
+        if (strIngredient16 != null && strMeasure16 != null && !strIngredient16.isEmpty() && !strMeasure16.isEmpty()) {
+            list.add(new MeasureDTO(strIngredient16, strMeasure16));
+        }
+        if (strIngredient17 != null && strMeasure17 != null && !strIngredient17.isEmpty() && !strMeasure17.isEmpty()) {
+            list.add(new MeasureDTO(strIngredient17, strMeasure17));
+        }
+        if (strIngredient18 != null && strMeasure18 != null && !strIngredient18.isEmpty() && !strMeasure18.isEmpty()) {
+            list.add(new MeasureDTO(strIngredient18, strMeasure18));
+        }
+        if (strIngredient19 != null && strMeasure19 != null && !strIngredient19.isEmpty() && !strMeasure19.isEmpty()) {
+            list.add(new MeasureDTO(strIngredient19, strMeasure19));
+        }
+        if (strIngredient20 != null && strMeasure20 != null && !strIngredient20.isEmpty() && !strMeasure20.isEmpty()) {
+            list.add(new MeasureDTO(strIngredient20, strMeasure20));
+        }
+
+        return list;
     }
 }

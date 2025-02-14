@@ -1,4 +1,4 @@
-package com.example.foodplanningapp;
+package com.example.foodplanningapp.ui.splash;
 
 import android.os.Bundle;
 
@@ -13,8 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.airbnb.lottie.LottieAnimationView;
-
-
+import com.example.foodplanningapp.R;
 
 
 public class SplashFragment extends Fragment {

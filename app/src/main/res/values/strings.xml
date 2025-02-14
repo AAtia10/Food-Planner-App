@@ -5,7 +5,20 @@
     <string name="continue_with_google_str">Continue With Google</string>
     <string name="continue_with_mail_str">continue With Mail</string>
     <string name="Title_start" />
-    <string name="Title_string"></string>
+    <string name="Title_string">Meal Mate</string>
     <string name="continue_as_guest">Continue as Guest</string>
     <string name="continue_with_mail">Continue With Mail</string>
+    <string name="sign_up">Sign up</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_an_account">Already have an account ?</string>
+    <string name="login"><u>    Login  </u></string>
+    <string name="categories">Categories</string>
+    <string name="daily_inspiration">Daily Inspiration</string>
+    <string name="countries">Countries</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="steps">Steps</string>
+    <string name="video">Video</string>
 </resources>
