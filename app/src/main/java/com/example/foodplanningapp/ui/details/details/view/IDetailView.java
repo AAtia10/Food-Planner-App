@@ -1,4 +1,4 @@
-package com.example.foodplanningapp.ui.home.view;
+package com.example.foodplanningapp.ui.details.details.view;
 
 import com.example.foodplanningapp.models.MealDTO;
 

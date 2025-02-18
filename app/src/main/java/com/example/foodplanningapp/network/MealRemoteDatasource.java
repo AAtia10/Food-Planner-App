@@ -4,6 +4,7 @@ import android.util.Log;
 
 import com.example.foodplanningapp.models.AreaResponse;
 import com.example.foodplanningapp.models.CategoryResponse;
+import com.example.foodplanningapp.models.IngredientResponse;
 import com.example.foodplanningapp.models.MealDTO;
 import com.example.foodplanningapp.models.RandomMealDTO;
 
@@ -59,6 +60,27 @@ public class MealRemoteDatasource {
     {
         return service.getAreas();
     }
+    public Single<IngredientResponse>getIngredients()
+    {
+        return service.getIngredients();
+    }
+
+    public Single<RandomMealDTO>getMealCountry(String s)
+    {
+        return service.getMealCountry(s);
+
+    }
+    public Single<RandomMealDTO>getMealcategory(String s)
+    {
+        return  service.getMealCatgeory(s);
+
+    }
+    public Single<RandomMealDTO>getMealingr(String s)
+    {
+        return service.getMealIngr(s);
+
+    }
+
 
 
 }

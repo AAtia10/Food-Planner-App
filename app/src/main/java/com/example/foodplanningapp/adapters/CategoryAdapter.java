@@ -19,6 +19,16 @@ import java.util.List;
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHolder> {
 
    List<CategoryDTO> list;
+    OnItemClickListener onItemClickListener;
+
+    public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
+        this.onItemClickListener = onItemClickListener;
+    }
+
+    public void setList(List<CategoryDTO> list) {
+        this.list = list;
+        notifyDataSetChanged();
+    }
 
     public CategoryAdapter(List<CategoryDTO> list) {
         this.list = list;
@@ -38,6 +48,9 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
         CategoryDTO categoryDTO= list.get(position);
         holder.textView.setText(categoryDTO.getStrCategory());
         Glide.with(holder.itemView).load(categoryDTO.getStrCategoryThumb()).into(holder.imageView);
+        holder.itemView.setOnClickListener(view -> {
+            onItemClickListener.onClicks(categoryDTO.getStrCategory());
+        });
 
     }
 
@@ -61,6 +74,11 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
 
         }
 
+    }
+
+    public interface OnItemClickListener
+    {
+        public void onClicks(String s);
     }
 
 }

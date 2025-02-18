@@ -3,6 +3,7 @@ package com.example.foodplanningapp.repos;
 import com.example.foodplanningapp.models.AreaDTO;
 import com.example.foodplanningapp.models.CategoryDTO;
 import com.example.foodplanningapp.models.CategoryResponse;
+import com.example.foodplanningapp.models.IngredientsDTO;
 import com.example.foodplanningapp.models.MealDTO;
 import com.example.foodplanningapp.models.RandomMealDTO;
 import com.example.foodplanningapp.network.MealRemoteDatasource;
@@ -69,4 +70,35 @@ public class RemoteRepo {
                 .map(x->x.getMeals())
                 .observeOn(AndroidSchedulers.mainThread());
     }
+    public Single<List<IngredientsDTO>>getIngredients()
+    {
+        return mealRemoteDatasource.getIngredients()
+                .subscribeOn(Schedulers.io())
+                .map(x->x.getIngredients())
+                .observeOn(AndroidSchedulers.mainThread());
+    }
+
+    public Single<List<MealDTO>> getMealCategory(String s){
+        return mealRemoteDatasource.getMealcategory(s)
+                .subscribeOn(Schedulers.io())
+                .map(x->x.getMeals())
+                .observeOn(AndroidSchedulers.mainThread());
+
+    }
+
+    public Single<List<MealDTO>> getMealCountry(String s){
+        return mealRemoteDatasource.getMealCountry(s)
+                .subscribeOn(Schedulers.io())
+                .map(x->x.getMeals())
+                .observeOn(AndroidSchedulers.mainThread());
+
+    }
+    public Single<List<MealDTO>> getMealingr(String s){
+        return mealRemoteDatasource.getMealingr(s)
+                .subscribeOn(Schedulers.io())
+                .map(x->x.getMeals())
+                .observeOn(AndroidSchedulers.mainThread());
+
+    }
+
 }

@@ -21,4 +21,10 @@
     <string name="ingredients">Ingredients</string>
     <string name="steps">Steps</string>
     <string name="video">Video</string>
+    <string name="loginn">Login</string>
+    <string name="categoriess">Categories</string>
+    <string name="ingredientss">Ingredients</string>
+    <string name="your_favourite_meals">Your Favourite Meals</string>
+    <string name="your_week_plan">Your Week Plan</string>
+    <string name="default_web_client_id">313698502727-4e3bnv7vl5ct14r367fjarmdmd52pk7d.apps.googleusercontent.com</string>
 </resources>

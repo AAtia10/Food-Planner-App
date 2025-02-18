@@ -14,6 +14,8 @@ import android.view.ViewGroup;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.example.foodplanningapp.R;
+import com.example.foodplanningapp.models.Sharedprefrence;
+import com.example.foodplanningapp.ui.MainActivity;
 
 
 public class SplashFragment extends Fragment {
@@ -44,11 +46,20 @@ public class SplashFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         lottie=view.findViewById(R.id.animationView);
+        MainActivity mainActivity=(MainActivity) getActivity();
+        mainActivity.hide();
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Navigation.findNavController(view).navigate(R.id.action_splashFragment_to_startFragment
-                );
+                if (Sharedprefrence.getInstance(requireContext()).isUserLoggedIn())
+                {
+                    Navigation.findNavController(view).navigate(R.id.action_splashFragment_to_homeFragment);
+                }
+                else
+                {
+                    Navigation.findNavController(view).navigate(R.id.action_splashFragment_to_startFragment);
+                }
+
             }
         },3000);
     }

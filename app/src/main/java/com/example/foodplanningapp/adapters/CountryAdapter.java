@@ -20,9 +20,19 @@ import java.util.List;
 public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ViewHolder> {
 
    List<AreaDTO> list;
+   OnItemClickListener onItemClickListener;
+
+    public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
+        this.onItemClickListener = onItemClickListener;
+    }
 
     public CountryAdapter(List<AreaDTO> list) {
         this.list = list;
+    }
+
+    public void setList(List<AreaDTO> list) {
+        this.list = list;
+        notifyDataSetChanged();
     }
 
     @NonNull
@@ -40,6 +50,9 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ViewHold
         holder.textView.setText(areaDTO.getStrArea());
         String url= FlagHelper.getUrl(areaDTO.getStrArea());
         Glide.with(holder.itemView.getContext()).load(url).into(holder.imageView);
+        holder.itemView.setOnClickListener(view -> {
+            onItemClickListener.onClicks(areaDTO.getStrArea());
+        });
 
     }
 
@@ -63,6 +76,10 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ViewHold
 
         }
 
+    }
+    public interface OnItemClickListener
+    {
+        public void onClicks(String s);
     }
 
 }

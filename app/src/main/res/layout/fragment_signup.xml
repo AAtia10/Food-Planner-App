@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/usernametxtfield"
+        android:id="@+id/usernametxtfieldlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/imageView"
@@ -33,6 +33,7 @@
 
     <com.google.android.material.textfield.TextInputEditText
         android:layout_width="match_parent"
+        android:id="@+id/usernametxtfield"
         android:layout_height="wrap_content"
         android:hint="@string/username"
         android:paddingStart="60dp"
@@ -41,11 +42,11 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/emaitxtfield"
+        android:id="@+id/emaitxtfieldlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/usernametxtfield"
-        app:layout_constraintStart_toStartOf="@id/usernametxtfield"
+        app:layout_constraintTop_toBottomOf="@id/usernametxtfieldlayout"
+        app:layout_constraintStart_toStartOf="@id/usernametxtfieldlayout"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
@@ -56,6 +57,7 @@
 
     <com.google.android.material.textfield.TextInputEditText
         android:layout_width="match_parent"
+        android:id="@+id/emaitxtfield"
         android:layout_height="wrap_content"
         android:background="@drawable/rectangleee"
         android:paddingStart="60sp"
@@ -65,13 +67,13 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/passtxtfield"
+        android:id="@+id/passtxtfieldlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/emaitxtfield"
+        app:layout_constraintTop_toBottomOf="@id/emaitxtfieldlayout"
         app:layout_constraintStart_toStartOf="parent"
         app:startIconDrawable="@drawable/pass_icon"
-        app:endIconDrawable="@drawable/eye_icon"
+        app:passwordToggleEnabled="true"
         app:startIconTint="@color/orange"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
@@ -81,6 +83,7 @@
 
     <com.google.android.material.textfield.TextInputEditText
         android:layout_width="match_parent"
+        android:id="@+id/passtxtfield"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="564dp"
@@ -97,13 +100,13 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/confirmpasstxtfield"
+        android:id="@+id/confirmpasstxtfieldlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/passtxtfield"
+        app:layout_constraintTop_toBottomOf="@id/passtxtfieldlayout"
         app:layout_constraintStart_toStartOf="parent"
         app:startIconDrawable="@drawable/pass_icon"
-        app:endIconDrawable="@drawable/eye_icon"
+        app:passwordToggleEnabled="true"
         android:layout_marginTop="16dp"
         app:startIconTint="@color/orange"
         >
@@ -112,6 +115,7 @@
 
     <com.google.android.material.textfield.TextInputEditText
         android:layout_width="match_parent"
+        android:id="@+id/confirmpasstxtfield"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="612dp"
@@ -130,9 +134,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/confirmpasstxtfield"
+        android:layout_below="@id/confirmpasstxtfieldlayout"
         android:backgroundTint="#E65425"
-        app:layout_constraintTop_toBottomOf="@id/confirmpasstxtfield"
+        app:layout_constraintTop_toBottomOf="@id/confirmpasstxtfieldlayout"
         android:layout_marginTop="32dp"
         android:text="Sign up"
         android:textSize="30sp"

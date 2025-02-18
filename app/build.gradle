@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     id 'androidx.navigation.safeargs'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -68,5 +69,10 @@ dependencies {
     implementation 'io.reactivex.rxjava3:rxjava:3.1.5'
     implementation "androidx.room:room-rxjava3:2.3.0-alpha02"
     implementation "com.github.akarnokd:rxjava3-retrofit-adapter:3.0.0"
+    implementation platform('com.google.firebase:firebase-bom:33.9.0')
+    implementation 'com.google.firebase:firebase-auth:22.3.1'
+    implementation 'com.google.android.gms:play-services-auth:21.0.0'
+    implementation("com.google.firebase:firebase-database")
+
 
 }

@@ -1,9 +1,14 @@
 package com.example.foodplanningapp.models;
 
+import androidx.room.Entity;
+
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MealDTO {
+
+
+public class MealDTO implements Serializable {
     private String idMeal;
     private String strMeal;
     private Object strDrinkAlternate;
