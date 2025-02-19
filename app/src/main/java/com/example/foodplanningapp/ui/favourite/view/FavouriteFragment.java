@@ -62,12 +62,12 @@ public class FavouriteFragment extends Fragment implements IFavouriteView{
 
             if(Connection.isConnected(requireContext()))
             {
-                favouritePresenter.delete(new StoreMeal("fav",Sharedprefrence.getInstance(requireContext()).getUserId(),"27-11",v));
+                favouritePresenter.delete(new StoreMeal("fav",Sharedprefrence.getInstance(requireContext()).getUserId(),"date",v));
                 dailyMealAdapter.deleteMeal(v);
             }
             else
             {
-                Toast.makeText(requireContext(), "No Internet", Toast.LENGTH_SHORT).show();
+                Snackbar.make(requireView(), "Please Check your Internet Connection", Snackbar.LENGTH_SHORT).show();
 
             }
 

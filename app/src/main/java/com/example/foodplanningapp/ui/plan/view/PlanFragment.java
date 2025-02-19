@@ -21,6 +21,7 @@ import com.example.foodplanningapp.models.MealDTO;
 import com.example.foodplanningapp.models.Sharedprefrence;
 import com.example.foodplanningapp.models.StoreMeal;
 import com.example.foodplanningapp.ui.plan.presenter.PlanPresenter;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -90,7 +91,7 @@ public class PlanFragment extends Fragment implements IPlanView {
             }
             else
             {
-                Toast.makeText(requireContext(), "No Internet", Toast.LENGTH_SHORT).show();
+                Snackbar.make(requireView(), "Please Check your Internet Connection", Snackbar.LENGTH_SHORT).show();
             }
 
         });
