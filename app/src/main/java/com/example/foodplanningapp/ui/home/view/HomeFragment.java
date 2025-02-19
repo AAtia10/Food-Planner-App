@@ -124,12 +124,6 @@ public class HomeFragment extends Fragment implements IHomeView {
 
 
 
-
-
-
-
-
-
         categoryAdapter = new CategoryAdapter(new ArrayList<>());
         countryAdapter = new CountryAdapter(new ArrayList<>());
         ingridentAdapter = new IngridentAdapter(new ArrayList<>());
@@ -247,6 +241,8 @@ public class HomeFragment extends Fragment implements IHomeView {
 
     @Override
     public void countrySearch(List<AreaDTO> list) {
+        list.forEach((x)-> Log.i("TAG", "countrySearch: "+x.getStrArea()));
+        Log.i("TAG", "countrySearch:--------------------------------------- ");
         countryAdapter.setList(list);
 
     }

@@ -127,6 +127,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/categoryrecyle"
                 android:layout_width="wrap_content"
+                app:reverseLayout="false"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 app:layout_constraintTop_toBottomOf="@+id/cattxt"

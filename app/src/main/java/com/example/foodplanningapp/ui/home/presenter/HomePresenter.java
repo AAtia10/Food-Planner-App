@@ -81,6 +81,7 @@ public class HomePresenter {
                     @Override
                     public void onSuccess(@NonNull List<CategoryDTO> categoryDTOS) {
                         homeView.showAllCategories(categoryDTOS);
+                        catlist.clear();
                         catlist.addAll(categoryDTOS);
 
                     }
@@ -103,6 +104,7 @@ public class HomePresenter {
                     @Override
                     public void onSuccess(@NonNull List<AreaDTO> areaDTOS) {
                         homeView.showAreas(areaDTOS);
+                        arealist.clear();
                         arealist.addAll(areaDTOS);
 
                     }
@@ -125,6 +127,7 @@ public class HomePresenter {
                     @Override
                     public void onSuccess(@NonNull List<IngredientsDTO> ingredientsDTOS) {
                         homeView.showIngredients(ingredientsDTOS);
+                        inglist.clear();
                         inglist.addAll(ingredientsDTOS);
 
 
